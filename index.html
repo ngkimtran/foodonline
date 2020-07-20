@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <title>delicious.</title>
+    </head>
+
+    <body>
+        <div class="page" id="page">
+            <div class="header">
+                <nav>
+                    <h3 class="logo">delicious.</h3>
+                    <div class="nav-open">
+                        <a href="#menu">Menu</a>
+                        <a href="#order-form">Order</a>
+                    </div>
+                </nav>
+                <div class="slogan">
+                    <p>Cook</p>
+                    <p style="padding: 0 150px;">&amp;</p>
+                    <p style="padding: 0 140px;">Deliver</p>
+                </div>
+            </div>
+
+            <div class="menu" id="menu">
+                <h1 class="menu-title">What's on our menu?</h1>
+                <div class="menu-list">
+                    <div class="hero">
+                        <img class="dish-image" src="../design/dish-1.png" alt="">
+                        <p class="dish-name">Mixed Rice Platter</p>
+                        <p class="dish-price">5.00</p>
+                        <p class="dish-descript">
+                            Rice topped with omelet egg, beef, bok 
+                            choy, carrot, cucumber, onion and 
+                            finished with sesame to help you enjoy 
+                            the dish to the fullest.
+                        </p>
+                    </div>
+
+                    <div class="hero">
+                        <img class="dish-image" src="../design/dish-2.png" alt="">
+                        <p class="dish-name">Crunchy Fried Milk</p>
+                        <p class="dish-price">4.00</p>
+                        <p class="dish-descript">
+                            Milk custard coated in egg and bread 
+                            crumbs then deep fried will give you a 
+                            crispy yet soft, satisfying experience.
+                        </p>
+                    </div>
+
+                    <div class="hero">
+                        <img class="dish-image" src="../design/dish-2.png" alt="">
+                        <p class="dish-name">Crunchy Fried Milk</p>
+                        <p class="dish-price">4.00</p>
+                        <p class="dish-descript">
+                            Milk custard coated in egg and bread 
+                            crumbs then deep fried will give you a 
+                            crispy yet soft, satisfying experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="advert">
+                <span class="advert-title">Like what you see?</span>
+                <span class="advert-coa">Place your order below!</span>
+            </div>
+
+            <div class="order-form" id="order-form">
+                <form>
+                    <span class="form-title">Name</span>
+                    <br><input class="form-input" type="text" name="username" required>
+
+                    <br><span class="form-title">Address:</span>
+                    <br><input class="form-input" type="text" name="address" required>
+
+                    <br><span class="form-title">Phone:</span>
+                    <br><input class="form-input" type="tel" name="phone" pattern="[0-9]{10}" required>
+                    
+                    <br><span class="form-title">Email:</span>
+                    <br><input class="form-input" type="email" name="email" required>
+
+                    <br><span class="form-title">Your order</span>
+<!--Order choice-->
+                    <table class="choice-div">
+                        <tr>
+                            <td>
+                                <input class="form-checkbox" type="checkbox" name="order" value="rice">
+                                <span class="form-choice">Mixed rice platter</span>
+                            </td>
+                            <td>
+                                <span class="form-title special">Quantity</span>
+                                <input class="form-quantity" type="number" name="rice-quantity" min="1" value="1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="form-checkbox" type="checkbox" name="order" value="milk">
+                                <span class="form-choice">Crunchy fried milk</span>
+                            </td>
+                            <td>
+                                <span class="form-title special">Quantity</span>
+                                <input class="form-quantity" type="number" name="milk-quantity" min="1" value="1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="form-checkbox" type="checkbox" name="order" value="milk">
+                                <span class="form-choice">Crunchy fried milk</span>
+                            </td>
+                            <td>
+                                <span class="form-title special">Quantity</span>
+                                <input class="form-quantity" type="number" name="milk-quantity" min="1" value="1">
+                            </td>
+                        </tr>
+                    </table>
+<!--End of order choice-->
+
+                    <br><span class="warning">Your order will be shipped at least 3 days from now.</span>
+                    <br><input class="submit-button" type="submit" value="Comfirm">
+                </form>
+            </div>
+
+            <div class="deco">
+                <p>We serve nothing but the best for our customers.</p>
+            </div>
+
+            <div class="footer">
+                <div id="first">
+                    <h3 class="footer-title">delicious.</h3>
+                    <p class="footer-detail">
+                        Vuorikatu 14-18<br>
+                        65100  Vaasa<br>
+                        FINLAND<br><br>
+                        email: deliciousservice@gmail.com
+                    </p>
+                </div>
+                <div id="second">
+                    <h3 class="footer-title">join us</h3>
+                    <img class="social-link" src="../design/FB-Logo.png" alt="" width="40px">
+                </div>
+                <a class="footer-button" href="#page">Back to the begining</a>
+            </div>
+        </div>
+    </body>
+</html>
